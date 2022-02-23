@@ -60,7 +60,7 @@ body {
 }
 
 .player {
-  background-color: #d6ccc2;
+  background-color: #e3d5ca;
 }
 
 .player-label,
@@ -71,7 +71,7 @@ body {
 }
 
 .computer {
-  background-color: #e3d5ca;
+  background-color: #d6ccc2;
 }
 
 .choice {
