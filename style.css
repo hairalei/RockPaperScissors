@@ -28,9 +28,11 @@ body {
 
 .container {
   margin: 0 auto;
+  max-width: 100%;
   width: 100vh;
   background-color: rgb(126, 126, 126);
-  padding: 2.4rem 0;
+  padding: 2.4rem;
+  position: relative;
 }
 
 .status {
@@ -65,25 +67,53 @@ body {
 }
 
 .choice {
-  font-size: 9rem;
-  /* transform: rotate(90deg); */
-}
-
-.computers-choice {
-  /* transform: rotate(-90deg); */
-  /* transform: rotate(180deg); */
-}
-
-.players-choice {
-  /* transform: rotate(180deg); */
+  font-size: 13rem;
 }
 
 .btns {
   text-align: center;
 }
 
-.btn {
+.btn,
+.new-game {
   display: inline-block;
   font-size: 1.6rem;
   padding: 1rem 2rem;
+  border: none;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 900;
+  border-radius: 1rem;
+}
+
+.btn:hover,
+.new-game:hover {
+  cursor: pointer;
+  background-color: rgb(11, 84, 85);
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active,
+.new-game:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.disabled:disabled,
+.disabled[disabled="disabled"] {
+  /* background-color: black; */
+  pointer-events: none;
+}
+
+.new-game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: hidden;
+}
+
+footer {
+  font-size: 1.2rem;
 }
