@@ -10,6 +10,8 @@ const btnRock = document.querySelector(".btnRock");
 const btnPaper = document.querySelector(".btnPaper");
 const btnScissors = document.querySelector(".btnScissors");
 const btnNewGame = document.querySelector(".new-game");
+const playerBG = document.querySelector(".player");
+const computerBG = document.querySelector(".computer");
 
 const choices = ["Rock", "Paper", "Scissors"];
 const emojis = ["✊", "🖐", "✌"];
@@ -51,13 +53,19 @@ function playGame() {
   }
 
   if (playerScore === 5) {
-    gameStatus.textContent = "You win!";
+    gameStatus.textContent = "YOU WON!";
     gameDetails.textContent = "Congratulations!";
+    playerBG.style.backgroundColor = "#edede9";
+    computerBG.style.backgroundColor = "#0b090a";
+    computerBG.style.color = "#aaa";
 
     gameOver();
   } else if (computerScore === 5) {
-    gameStatus.textContent = "You lost!";
+    gameStatus.textContent = "YOU LOST!";
     gameDetails.textContent = "Better luck next time!";
+    computerBG.style.backgroundColor = "#edede9";
+    playerBG.style.backgroundColor = "#0b090a";
+    playerBG.style.color = "#aaa";
 
     gameOver();
   }
@@ -65,7 +73,7 @@ function playGame() {
 
 function gameOver() {
   document.querySelector(".new-game").style.visibility = "visible";
-  gameStatus.style.fontSize = "6rem";
+  gameStatus.style.fontSize = "7rem";
 
   for (let i of document.querySelectorAll(".btn")) {
     i.disabled = true;
