@@ -47,9 +47,8 @@ body {
 
 .game-body {
   text-align: center;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin-bottom: 2rem;
 }
 
@@ -77,6 +76,7 @@ body {
 
 .choice {
   font-size: 13rem;
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .btns {
