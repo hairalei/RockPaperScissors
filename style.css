@@ -128,3 +128,15 @@ body {
 footer {
   font-size: 1.2rem;
 }
+
+@media screen and (max-width: 560px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  html {
+    font-size: 40%;
+  }
+}
