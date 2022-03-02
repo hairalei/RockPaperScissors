@@ -99,6 +99,7 @@ body {
   font-weight: 900;
   border-radius: 1rem;
   transition: all 0.2s ease-out;
+  margin-right: 1rem;
 }
 
 .btn {
@@ -189,5 +190,8 @@ footer {
 @media screen and (max-width: 265px) {
   html {
     font-size: 20%;
+  }
+  .btn {
+    margin: 2rem;
   }
 }
