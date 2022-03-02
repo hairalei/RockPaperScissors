@@ -177,8 +177,14 @@ footer {
   }
 }
 
-@media screen and (max-width: 345px) {
+@media screen and (max-width: 380px) {
   html {
-    font-size: 40%;
+    font-size: 35%;
+  }
+}
+
+@media screen and (max-width: 265px) {
+  html {
+    font-size: 20%;
   }
 }
