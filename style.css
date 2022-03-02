@@ -114,6 +114,9 @@ body {
   background-color: rgb(11, 84, 85);
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
   transform: translateY(-5px);
 }
 
