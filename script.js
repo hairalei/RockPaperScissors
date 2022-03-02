@@ -105,3 +105,6 @@ btnScissors.addEventListener("click", function () {
 btnNewGame.addEventListener("click", function () {
   location.reload();
 });
+
+const year = document.querySelector(".year");
+year.textContent = new Date().getFullYear();
