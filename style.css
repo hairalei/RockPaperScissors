@@ -31,8 +31,11 @@ body {
   max-width: 100%;
   width: 100vh;
   background-color: #d5bdaf;
+  border-radius: 5rem;
+  box-shadow: 0 5rem 10rem rgba(0, 0, 0, 0.2);
   padding: 2.4rem;
   position: relative;
+  margin-bottom: 2rem;
 }
 
 .status {
@@ -57,6 +60,7 @@ body {
   padding: 2rem 2rem;
   width: 100%;
   color: #000;
+  border-radius: 2rem;
 }
 
 .player {
@@ -94,6 +98,14 @@ body {
   /* color: #333; */
   font-weight: 900;
   border-radius: 1rem;
+  transition: all 0.2s ease-out;
+}
+
+.btn {
+  padding: 1rem 4rem;
+  font-size: 5rem;
+  background-color: #f7ede2;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover,
@@ -102,6 +114,7 @@ body {
   background-color: rgb(11, 84, 85);
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
 }
 
 .btn:active,
@@ -126,7 +139,36 @@ body {
 }
 
 footer {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  color: #777;
+  letter-spacing: 0.15rem;
+}
+
+.git-logo {
+  font-size: 2.5rem;
+  color: #777;
+}
+
+.git-logo:hover,
+.git-logo:active {
+  color: #000;
+  animation: github 0.5s infinite ease;
+}
+
+@keyframes github {
+  0% {
+    transform: rotate(-15deg) scale(1.2);
+  }
+  50% {
+    transform: rotate(15deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(-15deg) scale(1.2);
+  }
 }
 
 @media screen and (max-width: 560px) {
